@@ -1,0 +1,28 @@
+{
+  "name": "wintersmith-sassy",
+  "version": "1.0.0",
+  "description": "sass plugin that dosn't suck and has source-maps",
+  "author": "Johan Nordberg <code@johan-nordberg.com>",
+  "license": "MIT",
+  "keywords": [
+    "wintersmith",
+    "wintersmith-plugin",
+    "sass"
+  ],
+  "main": "lib/",
+  "dependencies": {
+    "node-sass": "^3.4.2"
+  },
+  "devDependencies": {
+    "coffee-script": ">1.9",
+    "vows": "0.8.x",
+    "wintersmith": "2.x"
+  },
+  "peerDependencies": {
+    "wintersmith": "2.x"
+  },
+  "scripts": {
+    "test": "vows test/* --spec",
+    "prepublish": "coffee -o ./lib -b -c ./src"
+  }
+}
