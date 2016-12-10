@@ -18,7 +18,7 @@ suite.addBatch
       'has plugin instances': (result) ->
         assert.instanceOf result.contents['test.scss'], wintersmith.ContentPlugin
         assert.isArray result.contents._.styles
-        assert.lengthOf result.contents._.styles, 2
+        assert.lengthOf result.contents._.styles, 3
       'sass files':
         topic: (result, env) ->
           result.contents['test.scss'].render @callback
