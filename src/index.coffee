@@ -1,3 +1,4 @@
+path = require 'path'
 sass = require 'node-sass'
 
 module.exports = (env, callback) ->
@@ -15,6 +16,10 @@ module.exports = (env, callback) ->
     constructor: (@filepath) ->
 
     render: (callback) ->
+      # ignore partials starting with underscore
+      if (path.basename @filename)[0] is '_'
+        do callback
+        return
       opts =
         file: @filepath.full
         includePaths: includePaths
