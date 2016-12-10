@@ -1,5 +1,6 @@
 
 @import "importme.sass";
+@import "_importmetoo.sass";
 @import "bourbon/bourbon";
 
 body {
@@ -9,14 +10,15 @@ body {
 
 @include keyframes(spin) {
   from {
-    @include transform(rotate(0));
+    @include transform(rotateY(0deg));
   }
   to {
-    @include transform(rotate(360deg));
+    @include transform(rotateY(360deg));
   }
 }
 
 p em {
+  display: inline-block;
 	@include animation(spin 1.0s linear);
 	@include animation-iteration-count(infinite);
 }
