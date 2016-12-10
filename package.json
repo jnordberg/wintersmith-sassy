@@ -1,6 +1,6 @@
 {
   "name": "wintersmith-sassy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "sass plugin that dosn't suck and has source-maps",
   "author": "Johan Nordberg <code@johan-nordberg.com>",
   "license": "MIT",
