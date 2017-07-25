@@ -9,9 +9,10 @@
     "wintersmith-plugin",
     "sass"
   ],
+  "repository": "https://github.com/jnordberg/wintersmith-sassy.git",
   "main": "lib/",
   "dependencies": {
-    "node-sass": "^3.13.1"
+    "node-sass": "^4.5.3"
   },
   "devDependencies": {
     "coffee-script": ">1.9",
